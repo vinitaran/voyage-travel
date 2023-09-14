@@ -2,7 +2,7 @@ package com.example.voyage_travel.Domains;
 
 import java.io.Serializable;
 
-public class itemsDomain implements Serializable {
+public class PopularDomain implements Serializable {
 
     private String title;
     private String location;
@@ -50,7 +50,7 @@ public class itemsDomain implements Serializable {
         this.src = src;
     }
 
-    public itemsDomain(String title, String location, String desc, String topPlaces, String src){
+    public PopularDomain(String title, String location, String desc, String topPlaces, String src){
         this.title = title;
         this.location = location;
         this.desc = desc;
