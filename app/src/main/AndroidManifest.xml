@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Voyagetravel"
         tools:targetApi="31">
         <activity
+            android:name=".DescriptionPage"
+            android:exported="false" />
+        <activity
             android:name=".Dashboard"
             android:exported="true" />
         <activity
