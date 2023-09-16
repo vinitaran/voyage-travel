@@ -43,17 +43,9 @@ public class PopularAdapter extends RecyclerView.Adapter<PopularAdapter.ViewHold
     public void onBindViewHolder(@NonNull PopularAdapter.ViewHolder holder, int position) {
         holder.titleText.setText(items.get(position).getTitle());
         holder.titleText.setText(items.get(position).getLocation());
-        holder.scoreTxt.setText(""+ items.get(position).getScore());
-
         int drawableResId = holder.itemView.getResources().getIdentifier(items.get(position).getSrc(), "drawable", holder.itemView.getContext().getPackageName());
 
         Glide.with(holder.itemView.getContext()).load(drawableResId).transform(new CenterCrop(), new GranularRoundedCorners(40,40,40,40)).into(holder.pic);
-
-        // holder.itemView.setOnClickListener(view -> {
-        //     Intent intent = new Intent(holder.itemView.getContext(), DescriptionPage.class);
-        //     intent.putExtra("object",items.get(position));
-        //     holder.itemView.getContext().startActivity(intent);
-        // });
     }
 
     @Override

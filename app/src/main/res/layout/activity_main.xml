@@ -12,14 +12,16 @@
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
         android:src="@drawable/intropage"
-        tools:layout_editor_absoluteX="-5dp"
-        tools:layout_editor_absoluteY="0dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/introButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="655dp"
+        android:layout_marginTop="600dp"
         android:layout_marginBottom="2dp"
         android:background="@color/colorStateEnabled"
         android:padding="10dp"

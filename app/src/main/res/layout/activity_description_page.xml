@@ -26,14 +26,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="355dp"
                     android:scaleType="centerCrop"
+<<<<<<< HEAD
                     android:src="@drawable/castleone"
+=======
+                    android:src="@drawable/castle1"
+>>>>>>> 62988c60cb723b8201ebbd0c830aa810edbd99c0
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
+<<<<<<< HEAD
                     app:layout_constraintVertical_bias="1.0"
                     app:srcCompat="@drawable/castle1" />
+=======
+                    app:layout_constraintVertical_bias="1.0"  />
+>>>>>>> 62988c60cb723b8201ebbd0c830aa810edbd99c0
 
                 <ImageView
                     android:id="@+id/backBtn"
@@ -80,10 +88,16 @@
 
                 <ImageView
                     android:id="@+id/imageView14"
+<<<<<<< HEAD
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/logomain"
                     tools:srcCompat="@drawable/marker" />
+=======
+                    android:layout_width="38dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/marker" />
+>>>>>>> 62988c60cb723b8201ebbd0c830aa810edbd99c0
 
                 <TextView
                     android:id="@+id/locationTxt"
@@ -126,6 +140,7 @@
                     android:background="@drawable/border_background">
 
                     <ImageView
+<<<<<<< HEAD
                         android:id="@+id/guideimg"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -137,6 +152,17 @@
                         app:srcCompat="@drawable/bed"
                         tools:srcCompat="@drawable/bed"
                         tools:ignore="DuplicateIds" />
+=======
+                        android:id="@+id/bedImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:src="@drawable/bed"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                         />
+>>>>>>> 62988c60cb723b8201ebbd0c830aa810edbd99c0
 
                     <TextView
                         android:id="@+id/bedTxt"
@@ -144,9 +170,15 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:text="2 bed"
+<<<<<<< HEAD
                         app:layout_constraintBottom_toBottomOf="@+id/guideimg"
                         app:layout_constraintStart_toEndOf="@+id/guideimg"
                         app:layout_constraintTop_toTopOf="@+id/guideimg" />
+=======
+                        app:layout_constraintBottom_toBottomOf="@+id/bedImg"
+                        app:layout_constraintStart_toEndOf="@+id/bedImg"
+                        app:layout_constraintTop_toTopOf="@+id/bedImg" />
+>>>>>>> 62988c60cb723b8201ebbd0c830aa810edbd99c0
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -158,6 +190,7 @@
                     android:background="@drawable/border_background">
 
                     <ImageView
+<<<<<<< HEAD
                         android:id="@+id/guideimg"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -168,6 +201,16 @@
                         app:layout_constraintTop_toTopOf="parent"
                         tools:srcCompat="@drawable/guide"
                         tools:ignore="DuplicateIds" />
+=======
+                        android:id="@+id/guideImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:src="@drawable/guide"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+>>>>>>> 62988c60cb723b8201ebbd0c830aa810edbd99c0
 
                     <TextView
                         android:id="@+id/guideTxt"
@@ -175,9 +218,15 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:text="Guide"
+<<<<<<< HEAD
                         app:layout_constraintBottom_toBottomOf="@+id/guideimg"
                         app:layout_constraintStart_toEndOf="@+id/guideimg"
                         app:layout_constraintTop_toTopOf="@+id/guideimg" />
+=======
+                        app:layout_constraintBottom_toBottomOf="@+id/guideImg"
+                        app:layout_constraintStart_toEndOf="@+id/guideImg"
+                        app:layout_constraintTop_toTopOf="@+id/guideImg" />
+>>>>>>> 62988c60cb723b8201ebbd0c830aa810edbd99c0
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -187,25 +236,40 @@
                     android:background="@drawable/border_background">
 
                     <ImageView
+<<<<<<< HEAD
                         android:id="@+id/guideimg"
+=======
+                        android:id="@+id/wifiImg"
+>>>>>>> 62988c60cb723b8201ebbd0c830aa810edbd99c0
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
                         android:src="@drawable/wifi"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
+<<<<<<< HEAD
                         app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="DuplicateIds" />
+=======
+                        app:layout_constraintTop_toTopOf="parent" />
+>>>>>>> 62988c60cb723b8201ebbd0c830aa810edbd99c0
 
                     <TextView
                         android:id="@+id/wifiTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
+<<<<<<< HEAD
                         android:text="Wifi"
                         app:layout_constraintBottom_toBottomOf="@+id/guideimg"
                         app:layout_constraintStart_toEndOf="@+id/guideimg"
                         app:layout_constraintTop_toTopOf="@+id/guideimg" />
+=======
+                        android:text="Price"
+                        app:layout_constraintBottom_toBottomOf="@+id/wifiImg"
+                        app:layout_constraintStart_toEndOf="@+id/wifiImg"
+                        app:layout_constraintTop_toTopOf="@+id/wifiImg" />
+>>>>>>> 62988c60cb723b8201ebbd0c830aa810edbd99c0
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
 

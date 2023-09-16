@@ -9,17 +9,14 @@ public class PopularDomain implements Serializable {
     private String desc;
     private String topPlaces;
     private String src;
-
-    private int price;
-    private double Score;
-    private int bed;
-    private String pic;
-    private boolean wifi;
-    private boolean guide;
-
+    private String wifi;
 
     public String getTitle() {
         return title;
+    }
+
+    public String getWifi() {
+        return wifi;
     }
 
     public void setTitle(String title) {
@@ -90,7 +87,7 @@ public class PopularDomain implements Serializable {
         this.desc = desc;
         this.topPlaces = topPlaces;
         this.src = src;
-
+        
         this.price = price;
         this.Score = Score;
         this.bed = bed;
