@@ -11,6 +11,7 @@ import androidx.core.content.ContextCompat;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
@@ -34,10 +35,25 @@ public class DescriptionPage extends AppCompatActivity {
 
         initView();
         setVariable();
-        ConstraintLayout constraintLayout = findViewById(R.id.yourConstraintLayout);
 
         imageView = findViewById(R.id.capturedImage1);
         button = findViewById(R.id.CameraButton);
+        ConstraintLayout constraintLayout = findViewById(R.id.guide_call);
+
+        constraintLayout.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                // Define the phone number you want to call
+                String phoneNumber = "+49 1525 9933486"; // Replace with the actual phone number
+
+                // Create an Intent to open the phone call app
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:"+phoneNumber));
+                startActivity(intent);
+
+            }
+        });
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
