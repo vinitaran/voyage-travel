@@ -241,25 +241,34 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="clip_vertical"
+                    android:layout_marginLeft="10dp"
                     android:layout_weight="0.5"
-                    android:text="$1,200"
-                    android:textColor="@color/black"
-                    android:textSize="34sp"
+                    android:text="    Capture The Precious Moment"
+                    android:textColor="#36677E"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button"
+                    android:id="@+id/CameraButton"
                     style="@android:style/Widget.Button"
                     android:layout_width="0dp"
-                    android:layout_height="50dp"
+                    android:layout_height="45dp"
                     android:layout_marginBottom="16dp"
+                    android:layout_marginRight="10dp"
                     android:layout_weight="0.5"
-                    android:background="#36677E"
-                    android:text="Book Now"
+                    android:background="@drawable/btn_shape_round"
+                    android:text="Open Camera"
                     android:textColor="@color/white"
                     android:textSize="18sp"
                     android:textStyle="bold" />
+
             </LinearLayout>
+
+            <ImageView
+                android:id="@+id/capturedImage1"
+                android:layout_width="match_parent"
+                android:layout_height="355dp"
+                android:scaleType="centerCrop" />
 
         </LinearLayout>
     </ScrollView>
