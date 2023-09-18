@@ -4,6 +4,7 @@ import android.Manifest;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
@@ -33,6 +34,7 @@ public class DescriptionPage extends AppCompatActivity {
 
         initView();
         setVariable();
+        ConstraintLayout constraintLayout = findViewById(R.id.yourConstraintLayout);
 
         imageView = findViewById(R.id.capturedImage1);
         button = findViewById(R.id.CameraButton);
@@ -91,7 +93,7 @@ public class DescriptionPage extends AppCompatActivity {
          titleTxt.setText(item.getTitle());
          locationTxt.setText(item.getLocation());
          descriptionTxt.setText(item.getDesc());
-        wifiTxt.setText(item.getWifi());
+         wifiTxt.setText(item.getWifi());
 
          int drawableResID=getResources().getIdentifier(item.getSrc(),"drawable",getPackageName());
 
