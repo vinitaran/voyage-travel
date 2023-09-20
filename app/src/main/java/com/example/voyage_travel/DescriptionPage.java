@@ -38,9 +38,10 @@ public class DescriptionPage extends AppCompatActivity {
 
         imageView = findViewById(R.id.capturedImage1);
         button = findViewById(R.id.CameraButton);
-        ConstraintLayout constraintLayout = findViewById(R.id.guide_call);
+        ConstraintLayout guideCall = findViewById(R.id.guide_call);
+        ConstraintLayout mapsIcon = findViewById(R.id.map_icon);
 
-        constraintLayout.setOnClickListener(new View.OnClickListener() {
+        guideCall.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
@@ -53,6 +54,30 @@ public class DescriptionPage extends AppCompatActivity {
                 startActivity(intent);
 
             }
+        });
+
+        mapsIcon.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+
+                // Extract the text from titleTxt and locationTxt
+                String title = titleTxt.getText().toString();
+                String location = locationTxt.getText().toString();
+
+                // Create a Uri with the extracted location name as the query parameter
+                Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + title + ", " + location);
+
+                // Create an Intent from gmmIntentUri. Set the action to ACTION_VIEW
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+
+                // Make the Intent explicit by setting the Google Maps package
+                mapIntent.setPackage("com.google.android.apps.maps");
+
+                // Attempt to start an activity that can handle the Intent
+                startActivity(mapIntent);
+            }
+
         });
 
         button.setOnClickListener(new View.OnClickListener() {
